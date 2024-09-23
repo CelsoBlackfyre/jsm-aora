@@ -2,6 +2,7 @@ import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 import { Slot } from "expo-router";
 import { StatusBar } from "expo-status-bar";
+import { Link } from "expo-router";
 
 // Funcao onde tem a pagina principal do app
 export default function App() {
@@ -10,6 +11,9 @@ export default function App() {
       <Text>DREAMS ARE MESSAGES FROM THE DEEP</Text>
       <Text>POWER OVER SPICE IS POWER OVER ALL</Text>
       <StatusBar style="auto" />
+      <Link href="/profile" style={{ color: "blue" }}>
+        Profile
+      </Link>
     </View>
   );
 }
